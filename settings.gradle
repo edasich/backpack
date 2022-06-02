@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Backpack Data"
 include ':sample'
-include ':test-mockwebserver-ext'
-include ':test-resource'
+include ':data-test-mockwebserver-ext'
+include ':data-test-resource'

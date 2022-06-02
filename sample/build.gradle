@@ -40,8 +40,8 @@ dependencies {
     implementation(Dependencies.retrofitDependency)
     implementation(Dependencies.retrofitConverterGsonDependency)
     testImplementation(Dependencies.mockWebServerDependency)
-    testImplementation project(":test-mockwebserver-ext")
-    testImplementation project(":test-resource")
+    testImplementation project(':data-test-mockwebserver-ext')
+    testImplementation project(':data-test-resource')
 
     testImplementation(Dependencies.junitDependency)
     testImplementation(Dependencies.hamcrestDependency)

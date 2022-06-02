@@ -1,0 +1,27 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'com.vanniktech.maven.publish'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    implementation(Dependencies.retrofitDependency)
+    implementation(Dependencies.mockWebServerDependency)
+    implementation project(':data-test-resource')
+
+    testImplementation(Dependencies.junitDependency)
+    testImplementation(Dependencies.hamcrestDependency)
+    testImplementation(Dependencies.kotlinCoroutineTestDependency)
+    testImplementation(Dependencies.retrofitConverterGsonDependency)
+}
+
+jar {
+    manifest {
+        attributes  'Automatic-Module-Name': 'backpack.data.test.mockwebserver.ext'
+    }
+}
