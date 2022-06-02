@@ -16,6 +16,8 @@ dependencies {
 
     testImplementation(Dependencies.junitDependency)
     testImplementation(Dependencies.hamcrestDependency)
+    testImplementation(Dependencies.kotlinCoroutineTestDependency)
+    testImplementation(Dependencies.retrofitConverterGsonDependency)
 }
 
 task sourceJar(type: Jar) {
