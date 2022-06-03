@@ -11,7 +11,7 @@ testImplementation 'io.github.edasich.backpack:data-test-mockwebserver-ext:LATES
 ```
 
 ### How to use it ?
-For instance we have a reponse file with json format in resources folder,
+For instance we have a response file with json format in resources folder,
 inside of `api-response` subfolder named `sample-200-api-response.json`.
 
 Note : Having a subfolder is optional
